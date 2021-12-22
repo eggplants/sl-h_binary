@@ -9,10 +9,10 @@ set -x
 if ! command -v curl gcc make &> /dev/null; then
   echo "require: build-essential curl libncurses5-dev" >&2
   exit 1
-elif command -v brew &> /dev/null && brew list | grep -q ncurses; then
+elif command -v brew &> /dev/null && ! brew list | grep -q ncurses; then
   echo "require: ncurses" >&2
   exit 1
-elif command -v apt &> /dev/null && apt list --installed | grep -q ncurses; then
+elif command -v apt &> /dev/null && ! apt list --installed | grep -q ncurses; then
   echo "require: ncurses" >&2
   exit 1
 fi
