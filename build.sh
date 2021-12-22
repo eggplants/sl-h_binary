@@ -9,8 +9,11 @@ set -x
 if ! command -v curl gcc make &> /dev/null; then
   echo "require: build-essential curl libncurses5-dev" >&2
   exit 1
-elif [ -z "`find / -name 'curses.h'`" ]; then
-  echo "require: libncurses*-dev" >&2
+elif command -v brew &> /dev/null && brew list | grep -q ncurses; then
+  echo "require: ncurses" >&2
+  exit 1
+elif command -v apt &> /dev/null && apt list --installed | grep -q ncurses; then
+  echo "require: ncurses" >&2
   exit 1
 fi
 
@@ -24,3 +27,4 @@ patch -p1 < sl5-1.patch
 sed s_ncurses/__ sl.c > _
 mv _ sl.c
 make && mv sl sl-h
+echo "done!"
