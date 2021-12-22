@@ -26,5 +26,7 @@ curl -Lo sl5-1.patch 'https://web.archive.org/web/20090316133609/http://www.izum
 patch -p1 < sl5-1.patch
 sed s_ncurses/__ sl.c > _
 mv _ sl.c
+# mv sl sl-h && zip -r sl-h.zip sl-h
+# exit
 make && mv sl sl-h
 echo "done!"
