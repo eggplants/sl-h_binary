@@ -8,6 +8,8 @@
 
 - `sl` (v2.02)
   - <https://web.archive.org/web/20070220170601if_/http://www.tkl.iis.u-tokyo.ac.jp:80/~toyoda/sl/sl.tar>
+  - written by [Masashi Toyoda](https://github.com/mtoyoda)
 
 - `sl-h` (v5-fix1)
-  - https://web.archive.org/web/20090316133609/http://www.izumix.org.uk:80/sl/sl5-1.patch
+  - <http://www.izumix.xyz/sl/sl5-1.patch>
+  - written by [Tomonori Izumi](http://www.izumix.xyz/)
