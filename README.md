@@ -9,7 +9,9 @@
 - `sl` (v2.02)
   - <https://web.archive.org/web/20070220170601if_/http://www.tkl.iis.u-tokyo.ac.jp:80/~toyoda/sl/sl.tar>
   - written by [Masashi Toyoda](https://github.com/mtoyoda)
+  - Copyright 1993,1998,2014 Toyoda Masashi (<mailto:mtoyoda@acm.org>)
 
 - `sl-h` (v5-fix1)
   - <http://www.izumix.xyz/sl/sl5-1.patch>
   - written by [Tomonori Izumi](http://www.izumix.xyz/)
+  - Copyright 1993,1998 Toyoda Masashi (<mailto:izumi@izumix.xyz>)
