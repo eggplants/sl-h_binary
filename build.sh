@@ -9,7 +9,7 @@ set -x
 if ! command -v curl gcc make &> /dev/null; then
   echo "require: build-essential curl libncurses5-dev" >&2
   exit 1
-elif ! [ -f /usr/include/ncurses.h ]; then
+elif ! [[ -f '/usr/include/ncurses.h' || -d '/usr/local/Cellar/ncurses' ]]; then
   echo "require: ncurses" >&2
   exit 1
 fi
